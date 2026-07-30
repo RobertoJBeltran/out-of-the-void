@@ -116,6 +116,29 @@
         	bottom: 0;
         	width: 23cqw;
     	}
+		.hide {
+			opacity: 0;
+		}
+		@keyframes pixel-shake {
+			0% { transform: translate(0, 0); }
+			20% { transform: translate(-3px, 1px); }
+			40% { transform: translate(3px, -2px); }
+			60% { transform: translate(-2px, -1px); }
+			80% { transform: translate(2px, 2px); }
+			100% { transform: translate(0, 0); }
+		}
+
+		/* Apply this class to the overlay div whenever you want it to shake */
+		#viewport.isshaking {
+			animation: pixel-shake 0.25s ease-in-out infinite;
+		}
+		.text-frame {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			text-align: center;
+			justify-content: center;
+    	}
 	}
 </style>
 
