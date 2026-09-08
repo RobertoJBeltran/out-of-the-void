@@ -6,8 +6,13 @@
     let isRevealed = $state(true);
 
 </script>
+<style>
+    .stairs {
+        height: 100%;
+    }
+</style>
 <div id='viewport' class='viewport'>
-    <img src={stairbackground} alt="" >
+    <img src={stairbackground} class="stairs" alt="" >
     <img src={monster} class="monster" class:hide={!isRevealed} alt="" />
 </div>
 <BottomControls 
