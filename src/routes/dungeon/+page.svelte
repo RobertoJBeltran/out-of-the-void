@@ -55,14 +55,6 @@
   });
 </script>
 <style>
-    body {
-      background: #050505;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
     .prison {
         width: 100%;
         z-index: 4;

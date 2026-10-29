@@ -1,4 +1,5 @@
 <script>
+	import '@fontsource/press-start-2p/latin-400.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import background from '$lib/assets/background.png';
 	let { children } = $props();
@@ -146,10 +147,10 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div id="wrapper">
+<main id="wrapper">
     <div id="wrapper-inner">
-        <img id="background" src={background} alt="">
+        <img id="background" src={background} alt="" fetchpriority="high">
 		{@render children()}
     </div>
-</div>
+</main>
 

@@ -15,14 +15,14 @@
 </div>
 
 <style>
-        /* 2. The 3D Scene container holds all room geometry */
+    /* The 3D Scene container holds all room geometry */
     .dungeon-room {
       position: relative;
       width: 100%;
       height: 100%;
       transform-style: preserve-3d;
       /* Simulates looking down the corridor */
-      transform: translateZ(100px); 
+      transform: translateZ(100px);
     }
 
     /* Common styles for walls, floor, and ceiling */
@@ -35,26 +35,23 @@
 
     /* Back Wall */
     .wall-back {
-      background-image: 
+      background-image:
         radial-gradient(circle at center, rgba(0,0,0,0) 20%, rgba(0,0,0,0.85) 90%),
         linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
         url('$lib/assets/Brick8.png');
       transform: translateZ(-500px);
     }
-
-    /* Left Wall */
+    /*
     .wall-left {
       background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.8)), url('$lib/assets/Brick8.png');
       transform-origin: left center;
       transform: rotateY(90deg);
     }
-
-    /* Right Wall */
     .wall-right {
       background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.8)), url('$lib/assets/Brick8.png');
       transform-origin: right center;
       transform: rotateY(-90deg);
-    }
+    }*/
 
     /* Floor */
     .floor {
@@ -92,10 +89,10 @@
     /* Back wall of the side corridor, heavily shaded for deep perspective */
     .side-back {
         transform: translateZ(-500px);
-        background-image: 
+        background-image:
             linear-gradient(90deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.25) 30%, rgba(0,0,0,0.25) 70%, rgba(0,0,0,0.22) 100%),
             /* Vertical shadow falloff: darker near the ceiling and floor */
-            linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.8) 100%),        
+            linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.8) 100%),
             url('$lib/assets/Brick8.png');
             border-left: none;
             border-right: none;
@@ -105,7 +102,7 @@
     .side-floor {
         transform-origin: center bottom;
         transform: rotateX(90deg) translateY(0px);
-        background-image: 
+        background-image:
             linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.95)),
             url('$lib/assets/floor.png');
     }
@@ -114,7 +111,7 @@
     .side-ceiling {
         transform-origin: center top;
         transform: rotateX(-90deg) translateY(-5px);
-        background-image: 
+        background-image:
             linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.95)),
             url('$lib/assets/ceiling.png');
     }
