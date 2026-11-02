@@ -28,7 +28,7 @@ You can preview the production build with `npm run preview`.
 
 ## Deploying
 
-To deploy the production build to Cloudflare (served at [ootv.wickeddeeds.lol](https://ootv.wickeddeeds.lol/)):
+To deploy the production build to Cloudflare:
 
 ```sh
 npm run deploy
